@@ -6,3 +6,7 @@ let thirst = {
 	min: 0,
 	thirstyPenalty: -20,
 };
+
+module.exports = {
+    thirst,
+};
