@@ -19,6 +19,26 @@
     
 // } console.log(Plants (weather))
 
+// IMPORT INQUIRER
+
+const inquirer = require("inquirer");
+const { AnonymousSubject } = require("rxjs/internal/Subject");
+
+inquirer
+.prompt([
+    {
+        name: "player_name",
+        type: "input",
+        message: "what is your name?",
+    },
+])
+
+.then((answer) => {
+    console.log("Hello " + answer.player_name);
+});
+
+
+
 
 class Plants {
   constructor(name){
